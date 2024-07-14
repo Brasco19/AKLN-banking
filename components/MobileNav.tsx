@@ -7,6 +7,7 @@ import Link from 'next/link.js'
 import { sidebarLinks } from '@/constants/index'
 import { usePathname } from 'next/navigation.js';
 import { cn } from '@/lib/utils';
+import Footer from './Footer';
 
 const MobileNav = ({user}:MobileNavProps) => {
 
@@ -64,7 +65,7 @@ const MobileNav = ({user}:MobileNavProps) => {
                     USER
                     </nav>
                 </SheetClose>
-                FOOTER
+                <Footer user={user} type='mobile' />
             </div>
         </SheetContent>
       </Sheet>
